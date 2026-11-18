@@ -3,7 +3,7 @@ from ultralytics import YOLO
 
 model = YOLO("yolov8x.pt")
 
-results = model.predict(r"C:\Users\guita\iCloudDrive\3年秋\領域実習B\7_YOLO\RJ米田_公開レポジトリ\ex1-26.png", conf=0.25)
+results = model.predict(r"ex1-26.png", conf=0.25)
 
 # 入力画像
 img = results[0].orig_img
