@@ -22,7 +22,7 @@ for box in boxes:
         thickness=3,
     )
 helmet_count = int((results[0].boxes.cls == 0).sum().item())
-print(f"検出したヘルメット数: {helmet_count}人")
+print(f"検出したヘルメット数: {helmet_count}個")
 
 cv2.imshow("", img)
 cv2.waitKey(0)
