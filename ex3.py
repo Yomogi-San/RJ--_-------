@@ -3,7 +3,7 @@ from ultralytics import YOLO
 
 model = YOLO("best260408.pt")
 
-results = model.predict(r"ex1-26.png", conf=0.5)
+results = model.predict(r"ex1-26.png", conf=0.55)
 
 # 入力画像
 img = results[0].orig_img
